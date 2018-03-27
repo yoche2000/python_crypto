@@ -1,0 +1,18 @@
+#Swap_Code_Decoder_and_Encoder
+#a_to_z
+
+s = string.ascii_lowercase # a-z
+s += '_'
+d = {}
+
+for c in range(len(s)):
+	d[25-c] = s[c]
+
+ciphertext = "mydeargreatteacher"
+
+s1 = ''
+
+for x in ciphertext:
+	s1 += d[x]
+
+print s1
